@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 
 class Solution {
@@ -21,3 +22,17 @@ public:
         return {-1, -1};
     }
 };
+
+int main() {
+    std::vector<int> v{1, 5, 7, 8, 10, 30, 90};
+
+    Solution s;
+    std::vector<int> ans = s.twoSum(v, 13);
+
+    for (int n : ans) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n";
+
+    return 0;
+}

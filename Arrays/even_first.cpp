@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 
 class Solution {
@@ -14,3 +15,17 @@ public:
         }
     }
 };
+
+int main() {
+    std::vector<int> v {1, 8, 5, 7, -4, 2, 0};
+
+    Solution s;
+    s.evenFirst(v);
+
+    for (int n : v) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n";
+
+    return 0;
+}

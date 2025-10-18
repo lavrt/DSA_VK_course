@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 
 class Solution {
@@ -16,3 +17,18 @@ public:
         }
     }
 };
+
+int main() {
+    std::vector<int> v1 {1, 5, 7, 8, 0, 0, 0};
+    std::vector<int> v2 {12, 18, 20};
+
+    Solution s;
+    s.merge(v1, 4, v2, 3);
+
+    for (int n : v1) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n";
+
+    return 0;
+}

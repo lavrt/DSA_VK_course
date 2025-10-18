@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 
 class Solution {
@@ -13,3 +14,17 @@ public:
         }
     }
 };
+
+int main() {
+    std::vector<int> v {1, 5, 7, 8, 0, 1, 0, 7, 5, 0};
+
+    Solution s;
+    s.zerosAreLast(v);
+
+    for (int n : v) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n";
+
+    return 0;
+}

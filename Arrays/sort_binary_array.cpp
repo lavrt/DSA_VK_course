@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 
 class Solution {
@@ -18,3 +19,17 @@ public:
         }
     }
 };
+
+int main() {
+    std::vector<int> v{1, 0, 1, 1, 1, 0, 0, 1};
+
+    Solution s;
+    s.sortBinaryArray(v);
+
+    for (int n : v) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n";
+
+    return 0;
+}

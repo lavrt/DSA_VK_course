@@ -1,9 +1,14 @@
+#include <iostream>
 #include <vector>
 
 class Solution {
 public:
     void rotate(std::vector<int>& nums, int k) {
         size_t n = nums.size();
+        if (n == 0) {
+            return;
+        }
+
         k %= n;
 
         reverseArray(nums, 0, n - 1);
@@ -19,3 +24,17 @@ public:
         }
     }
 };
+
+int main() {
+    std::vector<int> v{4, 5, -8, 1, 1, 0, 7};
+
+    Solution s;
+    s.rotate(v, 3);
+
+    for (int n : v) {
+        std::cout << n << " ";
+    }
+    std::cout << "\n";
+
+    return 0;
+}
