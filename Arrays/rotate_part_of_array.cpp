@@ -16,6 +16,7 @@ public:
         reverseArray(nums, k, n - 1);
     }
 
+private:
     void reverseArray(std::vector<int>& nums, int l, int r) {
         while (l < r) {
             int temp = nums[l];
